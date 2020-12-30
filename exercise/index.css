@@ -5,7 +5,7 @@
     font-style: initial;
 }
 header{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.808),rgba(0, 0, 0, 0.808)),
+    background-image:linear-gradient(rgba(80, 78, 78, 0.808),rgba(0, 0, 0, 0.644)),
     url(home.jpg);
     background-color: black;
     height: 100vh;
@@ -34,17 +34,54 @@ ul li a:hover{
 ul li.active a{background-color: ivory;
     color: black;
 }
-.title{
+.search{
     position: absolute;
-    top:20%;;
+    top:30%;;
     left: 50%;
     transform : translate(-50%,-50%);
+    text-align: center;
+    display: inline;
 }
-.title p{
+.search h1{
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
 }
-.form{
-    border-style:groove;
+.search h3{
+    color : white;
+    font-size: 20px;
+    font-weight: lighter;
+}
+input[type=text] {
+    width: 15cm;
+    height: 1cm;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 20px;
+    font-size: x-large;
+  }
+button {
+    width: 5cm;
+    height: 1.2cm;
+    border-radius: 20px;
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+button.active:hover{
+    background-color : white;
+    color: black;
+    font-weight: bolder;
+}
+.offer{
+    position: absolute;
+    top:60%;;
+    left: 50%;
+    transform : translate(-50%,-50%);
+    text-align: center;
+    display: inline-block;
+}
+.offer h1{
+    color: white;
 }
