@@ -1,14 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: roboto;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: initial;
 }
 header{
-    background-image:linear-gradient(rgba(80, 78, 78, 0.808),rgba(0, 0, 0, 0.644)),
-    url(image/home.jpg);
-    background-color: black;
-    height: 100vh;
+    background-image:linear-gradient(rgba(80, 78, 78, 0.712),rgba(0, 0, 0, 0.61)),
+    url(image/home.jpg); 
+    height: 50vh;
    background-position: center;
     background-size: cover;
 }
@@ -16,24 +15,37 @@ header{
     list-style-type: none;
     text-align: center;
     font-size: 20px;
+    top : 3%;
+    position: absolute;
+    right:3%;
+    font-weight: bolder;
 }
 .main ul li{
-   display: inline-block;
+    display: inline-block;
     margin-top: 25px;
 }
 .main ul li a{
     text-decoration : none;
     color: #ffffff;
     padding: 5px 20px;
-    transition: 0.6s ease;
+ 
 }
 .main ul li a:hover{
-    border:1px solid #ffffff;
+    border:2px solid #ffffff;
     color: white;
+    background-color: rgb(74, 108, 151);
 }
-.main ul li.active a{background-color: ivory;
-    color: black;
+ul li.active a{
+    border: 2px solid white;
+    color : black;
+    background-color: white;
 }
+.mainlogo {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+
 .search{
     position: absolute;
     top:30%;;
@@ -59,36 +71,40 @@ header{
     margin-top: 40px;
     border-radius: 20px;
     font-size: 15px;
+    border-color: rgb(63, 116, 196);
   }
 .search button {
     width: 5cm;
     height: 1.2cm;
     border-radius: 20px;
-    background-color: orange;
+    border-color: white;
+    background-color: rgb(48, 91, 119);
     color: white;
     font-size: 20px;
     font-weight: bolder;
 }
 .search button.active:hover{
-    background-color : white;
-    color: black;
+    background-color : rgb(29, 41, 82);
+    color: white;
     font-weight: bolder;
+    cursor: pointer;
 }
 .bottom h1{
-    color: white;
+    color: rgb(16, 76, 133);
     position: absolute;
-    top:57%;;
+    top:55.5%;;
     left: 50%;
     transform : translate(-50%,-50%);
     text-align: center;
+    font-weight: bolder;
 }
 .bottom p{
-    color: white;
     position: absolute;
-    top: 60%;
+    top: 59%;
     left: 50%;
     transform : translate(-50%,-50%);
-    font-weight: lighter;
+    font-weight: bolder;
+    color: rgba(105, 119, 134, 0.726);
 }
 .flex-container {
     display: flex;
@@ -99,12 +115,19 @@ header{
     text-align: center;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .flex-container sub{
+    font-weight: lighter;
+    font-size: small;
   }
   .flex-container > div {
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
     font-size: 30px;
-    width: 25%;
-    border: 1px;
-    background-color: white;
+    background-color: rgb(200, 230, 248);
+  }
+  .flex-container div:hover{
+    background-color: rgb(145, 186, 233);
+    color: white;
   }
