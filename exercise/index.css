@@ -6,32 +6,32 @@
 }
 header{
     background-image:linear-gradient(rgba(80, 78, 78, 0.808),rgba(0, 0, 0, 0.644)),
-    url(home.jpg);
+    url(image/home.jpg);
     background-color: black;
     height: 100vh;
    background-position: center;
     background-size: cover;
 }
-ul{
+.main ul{
     list-style-type: none;
     text-align: center;
     font-size: 20px;
 }
-Ul li{
-    display: inline-block;
+.main ul li{
+   display: inline-block;
     margin-top: 25px;
 }
-ul li a{
+.main ul li a{
     text-decoration : none;
     color: #ffffff;
     padding: 5px 20px;
     transition: 0.6s ease;
 }
-ul li a:hover{
+.main ul li a:hover{
     border:1px solid #ffffff;
     color: white;
 }
-ul li.active a{background-color: ivory;
+.main ul li.active a{background-color: ivory;
     color: black;
 }
 .search{
@@ -52,15 +52,15 @@ ul li.active a{background-color: ivory;
     font-size: 20px;
     font-weight: lighter;
 }
-input[type=text] {
+.search [type=text] {
     width: 15cm;
     height: 1cm;
     text-align: center;
     margin-top: 40px;
     border-radius: 20px;
-    font-size: x-large;
+    font-size: 15px;
   }
-button {
+.search button {
     width: 5cm;
     height: 1.2cm;
     border-radius: 20px;
@@ -69,19 +69,42 @@ button {
     font-size: 20px;
     font-weight: bolder;
 }
-button.active:hover{
+.search button.active:hover{
     background-color : white;
     color: black;
     font-weight: bolder;
 }
-.offer{
+.bottom h1{
+    color: white;
     position: absolute;
-    top:60%;;
+    top:57%;;
     left: 50%;
     transform : translate(-50%,-50%);
     text-align: center;
-    display: inline-block;
 }
-.offer h1{
+.bottom p{
     color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform : translate(-50%,-50%);
+    font-weight: lighter;
 }
+.flex-container {
+    display: flex;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform : translate(-50%,-50%);
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .flex-container > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 25%;
+    border: 1px;
+    background-color: white;
+  }
