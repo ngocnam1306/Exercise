@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: initial;
+}
+header{
+    background-image:linear-gradient(rgba(80, 78, 78, 0.712),rgba(0, 0, 0, 0.61)),
+    url(image/tour.jpg); 
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+}
+.tab ul{
+    list-style-type: none;
+    font-size: 20px;
+    top : 3%;
+    position: absolute;
+    right:3%;
+    font-weight: bolder;
+}
+.tab ul li{
+    display: inline-block;
+    margin-top: 25px;
+}
+.tab ul li a{
+    text-decoration : none;
+    color: #ffffff;
+    padding: 5px 20px;
+ 
+}
+.tab ul li a:hover{
+    
+    color: white;
+    background-color: rgb(74, 108, 151);
+}
+ul li.active a{
+    border: 2px solid white;
+    color :rgb(33, 33, 73);
+    background-color: white;
+}
+.logo {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+.text{
+    text-align: center;
+    padding-top: 150px;
+    color: white;
+    font-weight: lighter;
+    font-size: 180%;
+}
+.sort{
+    position: absolute;
+    top:30%;;
+    left: 50%;
+    transform : translate(-50%,-50%);
+}
+.bestoffer{
+    margin-top: 2em;
+    text-align: center;
+    color: rgb(14, 14, 51);
+    font-size: 150%;
+}
+.destination{
+    margin-top: 18%;
+    width: auto;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left :50%;
+}
+.destination th,td{
+    padding : 15px 15px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(14, 14, 41);
+}
+.why{
+    background-image: linear-gradient(rgba(80, 78, 78, 0.712),rgba(0, 0, 0, 0.61)) , url(image/tour.jpg); 
+    margin-top: 40%;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    padding-top: 1em;
+}
+
+.flex-container {
+    display: flex;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    margin-top: 10%;
+  }
+  .flex-container sub{
+    font-weight: lighter;
+    font-size: small;
+  }
+  .flex-container > div {
+    margin: 2%;
+    padding: 2%;
+    font-size: 30px;
+    width: 25%;
+  }
+  .flex-container div:hover{
+    background-color: rgb(145, 186, 233);
+    color: white;
