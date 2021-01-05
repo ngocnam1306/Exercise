@@ -5,7 +5,7 @@
     font-style: initial;
 }
 header{
-    background-image:linear-gradient(rgba(80, 78, 78, 0.712),rgba(0, 0, 0, 0.61)),
+    background-image:linear-gradient(rgba(26, 32, 56, 0.575),rgba(21, 40, 70, 0.658)),
     url(image/tour.jpg); 
     height: 50vh;
     background-position: center;
@@ -53,41 +53,45 @@ ul li.active a{
 }
 .sort{
     position: absolute;
-    top:30%;;
+    top:35%;;
     left: 50%;
     transform : translate(-50%,-50%);
 }
 .bestoffer{
-    margin-top: 2em;
+    margin-top: 1em;
     text-align: center;
     color: rgb(14, 14, 51);
     font-size: 150%;
 }
 .destination{
-    margin-top: 18%;
+    margin-top: 21%;
     width: auto;
     position: absolute;
     transform: translate(-50%,-50%);
     left :50%;
 }
 .destination th,td{
-    padding : 15px 15px;
+    padding : 5px 15px;
     text-align: center;
     font-weight: bold;
     color: rgb(14, 14, 41);
-    text-align: center;
 }
 .btn_book{
     margin-bottom: 2em;
-    background-color: rgb(28, 28, 95);
+    background-color: rgb(34, 87, 117);
     color: white;
     font-weight: bold;
     font-size: 120%;
     padding: 3px;
+    border: 2px solid rgb(38, 30, 75);
+    margin-left: ;
+}
+.btn_book:hover{
+    background-color: rgb(17, 17, 54);
 }
 .why{
-    background-image: linear-gradient(rgba(80, 78, 78, 0.712),rgba(0, 0, 0, 0.61)) , url(image/tour.jpg); 
-    margin-top: 40%;
+    background-image: linear-gradient(rgba(80, 78, 78, 0.712),rgba(0, 0, 0, 0.61)) , url(image/why.jpg); 
+    margin-top: 42%;
     height: 50vh;
     background-position: center;
     background-size: cover;
@@ -96,7 +100,6 @@ ul li.active a{
     font-size: 150%;
     padding-top: 1em;
 }
-
 .flex-container {
     display: flex;
     text-align: center;
@@ -105,7 +108,7 @@ ul li.active a{
     position: relative;
     transform: translate(-50%,-50%);
     left: 50%;
-    margin-top: 10%;
+    margin-top: 8%;
   }
   .flex-container sub{
     font-weight: lighter;
@@ -117,4 +120,6 @@ ul li.active a{
     font-size: 30px;
     width: 25%;
   }
-
+.why sub{
+    font-size: 60%;
+}

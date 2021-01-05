@@ -160,13 +160,11 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none;
 }
 
-/* Overwrite default styles of hr */
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
 
-/* Set a style for the submit/register button */
 .registerbtn {
   background-color: #4CAF50;
   color: white;
@@ -182,15 +180,13 @@ hr {
   opacity:1;
 }
 
-/* Add a blue text color to links */
 a {
   color: dodgerblue;
 }
 
-/* Set a grey background color and center the text of the "sign in" section */
 #signin {
-  top: 155%;
+  /*top: 155%;
   left: 50%;
   transform : translate(-50%,-50%);
-  position: absolute;
+  position: absolute;*/
 }
