@@ -129,13 +129,7 @@ ul li.active a{
     background-color: rgb(145, 186, 233);
     color: white;
   }
-  .footer{
-      top : 103%;
-      color: rgb(44, 68, 112);
-      position: absolute;
-      transform : translate(-50%,-50%);
-      left: 50%;
-  }
+  
   * {box-sizing: border-box}
 
 .container {
@@ -182,11 +176,4 @@ hr {
 
 a {
   color: dodgerblue;
-}
-
-#signin {
-  /*top: 155%;
-  left: 50%;
-  transform : translate(-50%,-50%);
-  position: absolute;*/
 }

@@ -71,7 +71,7 @@ ul li.active a{
     left :50%;
 }
 .destination th,td{
-    padding : 5px 15px;
+    padding : 5px 10px;
     text-align: center;
     font-weight: bold;
     color: rgb(14, 14, 41);
@@ -84,7 +84,6 @@ ul li.active a{
     font-size: 120%;
     padding: 3px;
     border: 2px solid rgb(38, 30, 75);
-    margin-left: ;
 }
 .btn_book:hover{
     background-color: rgb(17, 17, 54);
