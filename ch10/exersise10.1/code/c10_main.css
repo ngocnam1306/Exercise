@@ -1,98 +1,287 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-}
-main {
-    width: 100%;
+    font-size: 100%;
+    width: 99%;
+    margin: 0 auto;
+    border: 3px solid #931420;
     display: grid;
-    grid-template-rows: 120px 50px 1fr 60px;
-    grid-template-columns: 400px 1fr 1fr;    
+    grid-template: repeat(4,auto) / repeat(auto,1fr);
     grid-template-areas: 
-    "head head head"
-    "nav nav nav"
-    "sec1 sec2 sec2"
-    "foot foot foot";
-  }
-header{
-grid-area: head;
-background-color: rgb(247, 217, 162);
-font-weight: bold;
+    "head"
+    "navi"
+    "main"
+    "foot";
 }
-header h2 {
-    font-size: 2.15em;
-    color: #f2972e;
-    text-shadow: 2px 3px 0 black;
-    margin-left: 20%;
-    margin-bottom: 0.5em;
-  }
-  
-  header h3 {
-    font-size: 1.25em;
-    font-style: italic;
-    margin-left: 20%;
-  }
-  
-  header img {
-    width: 20%; 
-    max-width: 300px;
-    min-width: 300px;
-    float: left;
-    margin-left: 2em;
-    margin-top: 1.5em;
-  }
-  
-nav{
-    grid-area: nav;
-    background-color: brown;
-    color: white;
-    font-weight: bold;
-    
-}
-.s1{
-    grid-area: sec1;
-    margin:1em 1em;
-    text-align: center;
-}
-.s2{
-    grid-area: sec2;
-    margin: 1em 1em;
-    font-size: 130%;
-    height: 100%;
-}
-#article2{
-    border-top: 2px solid orangered;
-    
-}
-#article2 img{
+main section {
+    padding-left: 4.16%;
+    padding-right: 4.16%;
+    padding-bottom: 20px;
     float: right;
 }
-footer{
-    grid-area: foot;
+main aside {
+    padding-left: 4.16%;
+    padding-bottom: 20px;
+    float: right;
 }
-ul{
+a:hover {
+    font-weight: bolder;
+}
+a:focus {
+    font-style: bold;
+}
+header {
+    background-color: rgb(231, 216, 188);
+    grid-area: head;
+    display: grid;
+    grid-template: auto auto / auto 1fr;
+    grid-template-areas: 
+    "logo heading-top"
+    "logo heading-bottom";
+}
+header img {
+    grid-area: logo;
+    max-width: 80px;
+    min-width: 40px;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+}
+header h2 {
+    font-size: 170%;
+    color: #800000;
+    margin: 0px;
+    grid-area: heading-top;
+}
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+    margin: 0px;
+    grid-area: heading-bottom;
+}
+header em {
+    text-shadow: 2px 2px 5px #800000 ;
+}
+#nav_menu{
+    grid-area: navi;
+}
+#nav_menu ul {
+    margin: 0;
+	padding: 0;
+	list-style: none;
+    position: relative;    
+    display: grid;
+    grid-template: auto / repeat(5,1fr);   
+}
+#nav_menu ul li ul {
+	display: none;       
+    padding: 0;    
+}
+#nav_menu ul li ul li {
+	float: none;           
+    position: relative;    
+}
+#nav_menu ul li ul li ul{
+	position: absolute;
+	left: 100%;             
+    top: 0;    
+    width: 20%;         
+}           
+#nav_menu ul li:hover > ul {
+    display: block;  
+    position: absolute;
+    width: 20%;
+}
+#nav_menu > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#nav_menu ul li a {
+	text-align: center;
+    display: block;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+}
+#nav_menu ul li a.current {
+    color: rgb(238, 255, 0);
+    background-color: rgb(82, 58, 58);
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    background-color: rgb(41, 10, 10);
+}
+main h2, main h3, main img, main p, main blockquote, main ul, main li {
+    margin: 0px;
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template: auto / 20% 1fr;
+    gap: 2%;
+    grid-template-areas: "side sec";
+    background-color: rgb(223, 223, 219);
+}
+aside{
+    grid-area: side;
+    background-color: wheat;
+}
+aside h2 {
+    font-size: 100%;
+    padding: .5em;
+    white-space: nowrap;
+}
+aside h2 #aside_1 {
+    font-size: 130%;
+    color: #800000;
+    padding: 10px 0px;
+}
+aside img {
+    padding-bottom: 2em;
+}
+aside a{
+    color: blue;
+}
+section{
+    grid-area: sec;
+}
+section h1 {
+    font-size: 150%;
+    padding-top: .5em;
+    padding-bottom: .25em;
+    margin: 0px;
+}
+section article {
+    border-top: 2px solid #800000;
+    border-bottom: 2px solid #800000 ;
+}
+section article img {
+    max-width: 50%;
+    min-width: 150px;
+    float: right;
+    margin: 1em 0 1em 1em;
+    border: 1px solid black;
+}
+article p #article_1 {
+    padding: .5em 0;
+}
+article figure{
     display: flex;
-    list-style-type: none;
-    justify-content: space-evenly;
+    flex-direction: column;
+    float: right;
+    margin: 0 0em 0 2em;
+    padding-bottom: 1em;
 }
-ul li a.current{
-    background-color: white;
-    color:red;
+article figure figcaption{
+    font-weight: bold;
+    border-bottom: 2px solid black;
 }
-ul li a:hover{
-    background-color: white;
-    color:red;
+section h2 {
+    font-size: 130%;
+    color: #800000;
+    padding-top: 2em;
+    padding-bottom: .25em;
 }
-ul li a{
-    text-decoration: none;
-    color: white;
-    padding: 1em 3em;
+section h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+section blockquote {
+    padding: .75em 2em;
+    font-style: italic;
+}
+section ul {
+    padding-bottom: .25em;
+    padding-left: 1.25em;
+}
+section li {
+    padding-bottom: .35em;
 }
 footer {
-    border-top: 2px solid #f2972e;
-    padding-top: 0.7em;
-    font-size: 100%;
-    text-align: right;
-    margin-right:2em;
-  }
+    background-color: #931420;
+    grid-area: foot;
+}
+footer p {
+    text-align: center;
+    color: white;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin: 0px;
+}
+#mobile_menu {
+    background-color: #800000;
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    header{
+        padding-bottom: 1.5em;
+        display: grid;
+        grid-template: repeat(3, auto) / 1fr;
+        gap: 0.3em;
+        justify-items: center;
+        grid-template-areas: "logo" "heading-top" "heading-bottom";
+    }
+    header img {                
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    header h2, header h3 {
+        text-align: center;
+    }
+    main{
+        margin: 0;
+        grid-template: auto auto / 1fr;
+        gap: 0;
+        grid-template-areas:
+          "sec"
+          "side";
+    }
+    main section {                 
+        float: none;
+        width: 91.68%;
+    }
+    main section h2,p,blockquote{
+       display: block;
+       grid-area: navi;
+    }
+    main aside {                    
+        float: none;
+        width: 95.84%;
+        padding-right: 4.16%;
+    }   
+    section article img {
+        max-width: 30%;
+    }
+    #nav_menu {                 
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+        grid-area: navi;
+    }
+    .slicknav_menu {
+        background-color:#800000 !important;
+    }
+}
+
+@media only screen and (max-width: 479px) { 
+    body {
+        font-size: 90%;
+    }
+    section article figure{
+        width: 100%;
+        float: none;
+    }
+    #nav_menu {               
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color:#800000 !important;
+    }
+}

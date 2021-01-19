@@ -1,78 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 5</title>
-    <link rel="stylesheet" href="c10_main.css">
-    <link rel="shortcut icon" href="/picture/favicon.ico">
-</head>
-<body>
-    <main>
-      <header>
-        <img src="/picture/logo.png">
-        <h2>San Joaquin Valley Town Hall</h2>
-        <h3>Celebrating our 75th</h3>
-        
-      </header>
-      <nav>
-        <ul>
-          <li>
-              <a class="current" href="c10_index.html">Home</a>
-            </li>
-          <li>
-              <a href="#">Speaker</a>
-            </li>
-          <li>
-              <a href="#">Luncheon</a>
-            </li>
-          <li>
-              <a href="#">Ticket</a>
-            </li>
-          <li>
-              <a href="#">About us</a>
-            </li>
-        </ul>
-    </nav>
-      <section class="s1"> 
-        <div>
-            <h3>Guest Speaker</h3>
-            <h3>October</h3>
-            <figure>
-                <figcaption><a href="https://en.wikipedia.org/wiki/Jeffrey_Toobin">Jeffrey Toobin</a> </figcaption>
-                <img src="/picture/img1.jpg">  
-            </figure>
-            <h3>November</h3>
-            <figure>
-                <figcaption><a href="https://en.wikipedia.org/wiki/Andrew_Ross_Sorkin"> Ross Sorkin</a></figcaption>
-                <img src="/picture/img2.jpg">            
-            </figure>
-           <h3>January</h3>
-            <figure>
-              <figcaption><a href="https://vi.wikipedia.org/wiki/Amy_Chua">Amy Chua</a> </figcaption>
-                <img src="/picture/img3.jpg">           
-            </figure>
-        </div> 
-      </section>
-      <section class="s2">
-        <div id="article1">
-          <h3>Our Mission</h3>
-          <p>In late Spring 2021, we will present the two speakers, Dr. Paul Hessburg and Jane Pauley, we postponed from our last season. Your tickets and guest tickets will still be honored at that time and we have a record of your purchase, should it be needed. Dates for these lectures will be announced on our website and Facebook page when they are finalized.
-            We thank you for your support and patience during these difficult times.</p>
-            <h3>Speaker of the month</h3>
-        </div>
-        <div id="article2">
-          <h3>Fossil Thread in the Web of Life</h3>
-          <p>In late Spring 2021, we will present the two speakers, Dr. Paul Hessburg and Jane Pauley, we postponed from our last season. Your tickets and guest tickets will still be honored at that time and we have a record of your purchase, should it be needed. Dates for these lectures will be announced on our website and Facebook page when they are finalized.
-              We thank you for your support and patience during these difficult times.
-              In late Spring 2021, we will present the two speakers, Dr. Paul Hessburg and Jane Pauley, we postponed from our last season. Your tickets and guest tickets will still be honored at that time and we have a record of your purchase, should it be needed. Dates for these lectures will be announced on our website and Facebook page when they are finalized.
-              We thank you for your support and patience during these difficult times.</p>    
-              <img src="/picture/img4.jpg"
-        </div>
-      </section>
-      <footer>
-        <p>&copy; Copyright 2015 San Joaquin Valley Town Hall</p>
-      </footer>
-    </main>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="/picture/favicon.ico">
+        <title>San Joaquin Valley Town Hall</title>
+        <link rel="stylesheet" href="/code/c10_main.css">
+        <link rel="stylesheet" href="/plugin/SlickNav/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="/plugin/SlickNav/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+            $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <img src="/picture/logo.gif" height="80">
+            <h2>San Joaquin Valley Town Hall</h2>
+            <h3>Celebrating our 75<sup>th</sup> Year</h3>
+        </header>
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="c10_index.html" class="current">HOME</a></li>
+                <li><a href="#">SPEAKER</a>
+                </li>
+                <li><a href="#">LUNCHELONS</a></li>
+                <li><a href="#">MEMBER</a></li>
+                <li class="lastitem"><a href="#">ABOUT US</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Our Mission</h2>
+                <p>San Joaquin Talley Town Hall is a non-profit organization that is run by an all-volunteer 
+                board of directors. Our miission is to bring nationally <br> and internationally renowned,
+                thought-provoking speakers who infonn, educate, and entertain our audience! As one or 
+                our members told us:
+                </p>
+                <blockquote>"Each year I give a ticket package to each of our family members. 
+                I think of it as the gift of knowledge ... and that is priceless"
+                </blockquote>
+                <h1>Speaker of the Month</h1>
+                <article>
+                    <h2>Fossil Threads in the Web of Life</h2>
+                    <figure>
+                        <img src="/picture/img4.jpg" alt="Sampson dinosaur" >
+                        <figcaption>Scott Sampson and Friend</figcaption>
+                    </figure>
+                    <h3>February<br>Scott Sampson </h3>
+                    <p>What's 75 million years old and brand spanking new? A teenage Utahceratops! Come to the 
+                    Saroyan, armed with your best dinosaur roar, when Scott Sampson, Research Curator at the Utah Museum
+                    of Natural History, steps to the podium. Sampson's research has focused on the ecology and evolution
+                    of late Cretaceous dinosaurs and he has conducted fieldwork in a number of countries in Africa. 
+                    What's 75 million years old and brand spanking new? A teenage Utahceratops! Come to the 
+                    Saroyan, armed with your best dinosaur roar, when Scott Sampson, Research Curator at the Utah Museum
+                    of Natural History, steps to the podium. Sampson's research has focused on the ecology and evolution
+                    of late Cretaceous dinosaurs and he has conducted fieldwork in a number of countries in Africa.
+                    What's 75 million years old and brand spanking new? A teenage Utahceratops! Come to the 
+                    Saroyan, armed with your best dinosaur roar, when Scott Sampson, Research Curator at the Utah Museum
+                    of Natural History, steps to the podium. Sampson's research has focused on the ecology and evolution
+                    of late Cretaceous dinosaurs and he has conducted fieldwork in a number of countries in Africa.</p>
+                    <p id="article_1"><a href="#">Read more.</a>&nbsp;&nbsp;<a href="#">Or play video.</a></p>
+                </article>
+                <h2 class="style">Our Ticket Packages</h2>
+                <ul>
+                    <li>Season Package: $500</li>
+                    <li>Patron Package: $900</li>
+                    <li>Single Speaker: $1000</li>
+                </ul>
+            </section>
+            <aside>
+                <h2 id="aside_1">Guest speakers</h2>
+                <div>
+                    <h2>October<br><a href="#">Jeffrey Toobin</a></h2>
+                    <img src="/picture/img1.jpg" alt="Jeffrey Toobin" height="75">
+                    <h2>November<br><a href="#">Andrew Ross Sorkin</a></h2>
+                    <img src="/picture/img2.jpg" alt="Andrew Ross Sorkin" height="75">
+                    <h2>January<br><a href="#">Amy Chua</a></h2>
+                    <img src="/picture/img3.jpg" alt="Amy Chua" height="75">
+                    <h2>February<br><a href="#">Scott Sampson</a></h2>
+                    <img src="/picture/img5.jpg" height="75">
+                </div>
+            </aside>
+        </main>
+        <footer> 
+            <p>&copy;© Copyright 2015 San Joaquin Valley Town Hall</p>
+        </footer>
+    </body>
 </html>
