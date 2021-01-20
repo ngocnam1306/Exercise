@@ -1,9 +1,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 99%;
+    width: 100%;
     margin: 0 auto;
-    border: 3px solid #931420;
     display: grid;
     grid-template: repeat(4,auto) / repeat(auto,1fr);
     grid-template-areas: 
@@ -13,9 +12,9 @@ body {
     "foot";
 }
 main section {
-    padding-left: 4.16%;
-    padding-right: 4.16%;
-    padding-bottom: 20px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 25px;
     float: right;
 }
 main aside {
@@ -155,6 +154,7 @@ section h1 {
 section article {
     border-top: 2px solid #800000;
     border-bottom: 2px solid #800000 ;
+    padding-bottom: 2em;
 }
 section article img {
     max-width: 50%;
