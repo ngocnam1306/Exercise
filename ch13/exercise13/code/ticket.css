@@ -142,51 +142,30 @@ aside img {
 aside a{
     color: blue;
 }
-section{
+section {
     grid-area: sec;
-}
-section h1 {
+    width: 525px;
+    float: right;
+    padding: 0 20px 20px 20px;
+ }
+ #orderinformation{
+     margin-top: 3%;
+ }
+ #payment_method{
+     margin-top: 3%;
+ }
+ #creditcard{
+     margin-top: 3%;
+ }
+ #buttons{
+     margin-top: 3%;
+ }
+ section h1 {
     font-size: 150%;
-    padding-top: .5em;
-    padding-bottom: .25em;
-    margin: 0px;
-}
-section h2 {
-    font-size: 130%;
     color: #800000;
-    padding-top: 2em;
-    padding-bottom: .25em;
-}
-section h3 {
-    font-size: 105%;
-    padding-bottom: .25em;
-}
-section ul {
-    padding-bottom: .25em;
-    padding-left: 1.25em;
-}
-section li {
-    padding-bottom: .35em;
-}
-table{
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 75%;
-  
-}
-table td,th{
-    border: 1px solid rgb(85, 66, 66);
-    padding: 8px;
-    background-color: rgb(233, 212, 185);
-    font-weight: bolder;
-    text-align: center;
-}
-table th{
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: #4CAF50;
-  color: white;
-}
+    padding: .5em 0 .25em 0;
+    margin: 0;
+ }
 footer {
     background-color: #931420;
     grid-area: foot;

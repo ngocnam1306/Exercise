@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <link rel="stylesheet" href="/ch13/exercise13/code/ticket.css">
+    <link rel="shortcut icon" href="/ch13/exercise13/picture/favicon.ico">
+    <link rel="stylesheet" href="/ch13/exercise13/plugin/SlickNav/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="/ch13/exercise13/plugin/SlickNav/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+            $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+            });
+        </script>
+</head>
+<body>
+    <header>
+        <img src="/ch12/exercise12/picture/logo.gif" height="80">
+        <h2>San Joaquin Valley Town Hall</h2>
+        <h3>Celebrating our 75<sup>th</sup> Year</h3>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="/ch10+11/exercise10+11/code/c10_index.html">HOME</a></li>
+            <li><a href="#">SPEAKER</a>
+            </li>
+            <li><a href="/ch12/exercise12/code/luncheons.html" >LUNCHELONS</a></li>
+            <li><a href="ticket.html" class="current">TICKET</a></li>
+            <li><a href="#">ABOUT US</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>Become a Member</h1>
+        <form action="register_account.html" method="get"
+        name="registration_form" id="registration_form">
+            <fieldset>
+                <legend>Registration Information</legend>
+                <label for="email">E-Mail:</label>
+                <input type="email" name="email" id="email" autofocus required><br>
+                <label for="First Name">First Name:</label>
+                <input type="firstname" name="firstname" id="firstname" autofocus required><br>
+                <label for="lastname">Last Name:</label>
+                <input type="lastname" name="lastname" id="lastname" required><br>
+                <label for="address">Address:</label>
+                <input type="address" name="address" id="address" required><br>
+                <label for="city">City:</label>
+                <input type="city" name="city" id="city" required><br>
+                <label for="State">State:</label>
+                <input type="state" name="state" id="state" required><br>
+                <label for="zipcode">Zip-Code:</label>
+                <input type="zipcode" name="zipcode" id="zipcode" required><br>
+                <label for="phonenumber">Phone Number:</label>
+                <input type="phonenumber" name="phonenumber" id="phonenumber" required><br>
+            </fieldset>
+            <fieldset id="orderinformation">
+                <legend>Ordering Information</legend>
+                <label for="membership_type">Oder Type:</label>
+                <select name="membership_package" id="membership_package">
+                    <option value="j">Normal Package</option>
+                    <option value="r">Premium Package</option>
+                    <option value="c">Deluxe Packge</option>
+                </select><br>
+                <label for="tickets">Number of Ticket:</label>
+                <input type="number" name="tickets" id="tickets" placeholder="Number of single ticket"><br>
+                </fieldset>
+                <fieldset id="payment_method">
+                    <legend>Payment Method </legend>
+                    <input type="radio" id="billme" name="payment_method" value="billme">
+                    <label for="billme">Bill Me</label><br>
+                    <input type="radio" id="credit" name="payment_method" value="credit">
+                    <label for="credit">Credit Card</label><br>                    
+                </fieldset>
+                <fieldset id="creditcard">
+                    <legend>Credit Card Information</legend>
+                    <label for="card_type">Card Type:</label>
+                    <select name="membership_type" id="card">
+                    <option value="j">Premium</option>
+                    <option value="r">Diamond</option>
+                    <option value="c">Gold</option>
+                    </select><br>
+                    <label for="card_number">Card Number:</label>
+                    <input type="card_number" name="card_number" id="card_number" placeholder="16 degits"><br>
+                    <label for="expiration">Expiration Date:</label>
+                    <input type="expiration" name="expiration" id="expiration" required><br>
+                </fieldset>
+                <fieldset id="buttons">
+                    <legend>Submit Your Oder</legend>
+                    <label>&nbsp;</label>
+                    <input type="submit" id="submit" value="Submit">
+                    <input type="reset" id="reset" value="Reset Fields"><br>
+                </fieldset>
+            </form>
+        </section>
+        <aside>
+            <h2 id="aside_1">Guest speakers</h2>
+            <div>
+                <h2>October<br><a href="#">Jeffrey Toobin</a></h2>
+                <img src="/ch12/exercise12/picture/img1.jpg" alt="Jeffrey Toobin" height="75">
+                <h2>November<br><a href="#">Andrew Ross Sorkin</a></h2>
+                <img src="/ch12/exercise12/picture/img2.jpg" alt="Andrew Ross Sorkin" height="75">
+                <h2>January<br><a href="#">Amy Chua</a></h2>
+                <img src="/ch12/exercise12/picture/img3.jpg" alt="Amy Chua" height="75">
+                <h2>February<br><a href="#">Scott Sampson</a></h2>
+                <img src="/ch12/exercise12/picture/img5.jpg" height="75">
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2018, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+    </footer>
+</body>
+</html>
